@@ -1,19 +1,22 @@
-const express = require('express');
-const cors = require('cors');
-const morgan = require('morgan');
+const express = require("express");
+const cors = require("cors");
+const morgan = require("morgan");
+const config = require("./config");
 
-const app = express(); // llamas a la librería expres y crea la applicación
+
+const app = express();
 
 //utiliza estos middlewares:
 app.use(cors());
-app.use(morgan('dev'));
+app.use(morgan("dev"));
 app.use(express.json());
+
 
 //enpoint de prueba
 app.get("/", async(req,res)=>{
     res.status(200).json({ok:true})
 });
 
-app.listen(8080,()=>{
-    console.log('Escuchando...')
+app.listen(config.SERVER_PORT, () =>{
+    console.log(`listening on port :${config.SERVER_PORT}`)
 })
