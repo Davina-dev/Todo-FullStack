@@ -1,0 +1,25 @@
+Todo Fullstack:
+
+- Login (JWT).
+- Cada usuario tiene sus tareas.
+- Tareas: texto, hecho. Marcar/desmarcar, borrar, añadir.
+
+Preparación:
+- Docker-compose.yml para Mongo.
+-Esqueleto servidor.
+- Dotenv: fichero .env con variables de entorno.
+- Variables de Mongo DB.
+- Gestión de errores en servidor.
+
+Backend Auth:
+- Modelo User de Mongose (email, password).
+- Fichero auth.js: encryptPassword, comparePassword, generateToken, decodeToken.
+- Enpoints: /login, /register.
+- Auth Middleware + testing con Insomnia.
+
+Frontend Login y Registro:
+- Esqueleto del frontend.
+- Login component.
+- Estado de login: auth state switch.
+- Obtener token + guardad en localStorage.
+- Esqueleto de la pantalla principal.
