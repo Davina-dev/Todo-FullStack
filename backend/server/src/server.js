@@ -18,5 +18,8 @@ app.get("/", async(req,res)=>{
 });
 
 app.listen(config.SERVER_PORT, () =>{
-    console.log(`listening on port :${config.SERVER_PORT}`)
+    const mode= config.NODE_ENV.toUpperCase();
+    console.log(`Todo API Server (mode ${mode}) listening on port :${config.SERVER_PORT}`);
 })
+
+// minuto 55

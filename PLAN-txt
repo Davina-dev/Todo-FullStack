@@ -8,7 +8,7 @@ Preparación:
 - Docker-compose.yml para Mongo.
 -Esqueleto servidor.
 - Dotenv: fichero .env con variables de entorno.
-- Variables de Mongo DB.
+- Variables de Mongo DB y conexión.
 - Gestión de errores en servidor.
 
 Backend Auth:
