@@ -1,0 +1,1 @@
+// js puro sin http (comparacion de passwords...)
